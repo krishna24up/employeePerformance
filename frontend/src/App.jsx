@@ -29,6 +29,8 @@ function App() {
           <Route path="/" element={<Dashboard user={user} />} />
           <Route path="/login" element={<LoginPage onLogin={setUser} />} />
           <Route path="/signup" element={<SignupPage onSignup={setUser} />} />
+          <Route path="/auth/login" element={<LoginPage onLogin={setUser} />} />
+          <Route path="/auth/signup" element={<SignupPage onSignup={setUser} />} />
         </Routes>
       </main>
     </div>
